@@ -16,7 +16,7 @@ const setupBlog = (data) => {
   const articleField = document.querySelector(".article");
   const publishedAt = document.querySelector(".published");
 
-  banner.style.backgroundImage = `url(${data.bannerImage})`;
+  banner.style.backgroundImage = `url("${data.bannerImage}")`;
   title.innerHTML += data.title;
   publishedAt.innerHTML += data.publishedAt;
   publishedAt.innerHTML += ` by ${data.author}`;
