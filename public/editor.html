@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>!Admin Editor!</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/editor.css">
+  </head>
+  <body>
+    <header></header>
+    <main>
+
+      <div class="banner">
+        <input type="file" accept="image/*" id="banner-upload" hidden/>
+        <label for="banner-upload" class="banner-upload-btn">
+          <img src="../img/upload.png" alt="upload.png">
+        </label>
+      </div>
+      <div class="blog">
+        <label for="category">Choose a category:</label>
+        <select name="category" id="category">
+          <option>Web Development</option>
+          <option>Game Development</option>
+          <option>Algorithms & Data Structures</option>
+        </select>
+        <textarea type="text" class="title" placeholder="Blog title..."></textarea>
+        <textarea type="text" class="article" placeholder="Article here..."></textarea>
+      
+      </div>
+
+      <div class="blog-options">
+        <button class="btn publish-btn">
+            Publish
+        </button>
+        <input type="file" accept="image/*" id="image-upload" hidden>
+        <label for="image-upload" class="btn grey upload-btn">Upload Image</label>
+      </div>
+
+    </main>
+    <footer></footer>
+    <script src = "https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+    <script src = "https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
+    <script src = "https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+    <script src = "../js/firebase.js"></script>
+    <script src="../js/editor.js"></script>
+  </body>
+</html>

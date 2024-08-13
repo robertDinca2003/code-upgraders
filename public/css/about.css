@@ -1,0 +1,128 @@
+:root{
+    --random: 0;
+}
+body{
+    overflow-x: hidden;
+    min-height: 100vh;
+
+}
+main{
+    margin-top: 60px;
+
+}
+
+h1{
+    font-size: 40px;
+    font-style: italic;
+
+}
+.desc{
+    text-align: center;
+    max-width: 80vw;
+    font-size: 20px;
+}
+main>div{
+    justify-content: center;
+}
+.rand{
+    background-color: #d1d1d1;
+    color: #d1d1d1;
+    padding-left: 25px;
+    padding-right: 25px;
+    position: absolute;
+    top: 50;
+    left: calc(50% - 80px);
+    z-index: -1;
+    transform: scale(1.15) translate(calc(var(--random) * 4px), calc(var(--random) * 2px)) rotateZ(calc(var(--random) * 2deg));
+    transition: all 1.4s;
+}
+
+.notif{
+    transition: all 2s;
+    position: absolute;
+    bottom: 120px;
+    left: calc(-1000px);
+    width: fit-content;
+    display: flex;
+}
+.notif p{
+    background-color: #1e1e1e;
+    color: #f1f1f1;
+    padding: 5px;
+    font-size: 28px;
+    border: 2px solid #f1f1f1;
+    box-shadow: 4px 4px 20px #1e1e1e ;
+    
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border: 5px solid #1e1e1e;
+    border-radius: 30px;
+    padding: 10px;
+}
+form button{
+    border: 2px solid #1e1e1e;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 4px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.6s;
+
+}
+form button:hover{
+    background-color: #1e1e1e;
+    color: #f1f1f1;
+    
+}
+
+form label{
+    font-size: 20px;
+}
+
+form input, form textarea{
+    background-color: transparent;
+    border-radius: 15px;
+    border: 3px solid #1e1e1e;
+    padding: 10px;
+    font-size: 15px;
+}
+
+form h3{
+    text-align: center;
+    font-size: 25px;
+    font-style: italic;
+}
+form div{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+main>h2{
+    text-align: center;
+}
+.previous{
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    
+}
+.previous p{
+    width: 85vw;
+    border-bottom: 3px solid #1e1e1e;
+}
+@media screen and (max-width:600px) {
+    .notif p{
+        font-size: 20px;
+    }
+    main>h2{
+        font-size: 28px;
+    }
+}

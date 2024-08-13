@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Upgrades</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href="css/home.css">
+
+  </head>
+  <body>
+
+    <nav class="navbar">
+      <label for="menu-toggle" id="menu-header">Menu</label>
+      <input  type="checkbox" class="menu-toggle">
+      <ul class="page-links menu-items">
+        <li class="link-item">
+          <a class="link-anchor" href="/">Home</a>
+        </li>
+        <li class="link-item">
+          <a class="link-anchor" href="/about">About</a>
+        </li>
+        <li class="link-item">
+          <a class="link-anchor" href="/editor">Editor</a>
+        </li>
+        
+      </ul>
+    </nav>
+    
+    <header class="header">
+      <div class="content">
+        <h1 class="welcome">Welcome in the world of<br> <span class="withus">Computer Science</span></h1>
+        <h2 class="quote">Upgrade your knowladge <br> <span class="withus">with us</span></h2>
+        <a href="/editor" class="headBtn btnAnim"><p>Random<br class="break">Blog</p></a>
+      </div>
+    </header>
+
+    <main>
+      <div>
+        <div>
+          <label for="category">Category:</label>
+          <select class="bycategory" onchange="updateBlogs()" name="category">
+            <option>All</option>
+            <option>Web Development</option>
+            <option>Game Development</option>
+            <option>Algorithms & Data Structures</option>
+          </select>
+        </div>
+      <div>
+        <label for="order">Order by:</label>
+        <select class="byorder"  name="order" onchange="updateBlogs()">
+          <option>Latest</option>
+          <option>Oldest</option>
+        </select>
+      </div>
+      
+      </div>
+      <h2>Latest Article</h2>
+
+      <section class="blog-section">
+          
+      </section>
+      <button class="btn loadBtn" onclick="Load(true)">View More</button>
+      <!-- <button onclick="LoadMore()" class="btn" id="LoadMore">Load More</button> -->
+    </main>
+    <footer>
+    </footer>
+
+    <script src = "https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+  <script src = "https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
+  <script src = "https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+  <script src = "js/firebase.js"></script>
+  <script src="js/home.js"></script>
+  <script src = "js/nav.js"></script>
+  </body>
+</html>

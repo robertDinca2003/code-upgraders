@@ -1,0 +1,15 @@
+main{
+    margin: 60px;
+    min-height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: #8b8b8b;
+}
+
+main p{
+    font-size: 30px;
+    text-align: center;
+}

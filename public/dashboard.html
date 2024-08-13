@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.css" />
+    <link rel="stylesheet" href="css/home.css"/>
+    <link rel="stylesheet" href="css/dashboard.css"/>
+    
+</head>
+<body>
+    
+    
+    <div class="login">
+        <div id = "loginUI"></div>
+    </div>
+    <nav class="navbar">
+        <ul class="page-links">
+          <li class="link-item">
+            <a class="link-anchor" href="/">Home</a>
+          </li>
+          <li class="link-item">
+            <a class="link-anchor" href="/about">About</a>
+          </li>
+          <li class="link-item">
+            <a class="link-anchor" href="/editor">Editor</a>
+          </li>
+          
+        </ul>
+      </nav>
+
+    <h1 class="heading">Your blogs</h1>      
+
+    <section class="blog-section">
+        <!-- <div class="blog-card">
+            <img src="img/fibbo.jpeg" alt="fibbonaci sequence image"/>
+            <h2 class="blog-title">The story of the most recognizable problem in computer science</h2>
+            <h3 class="blog-description">Description: Vrajeala Vrajeala</h3>
+            <a href="/" class="btn blog-btn">Visit Article</a>
+            <a href="/" class="btn blog-btn">Edit</a>
+            <a href="/" class="btn blog-btn">Delete</a>
+            
+        </div> -->
+        
+    </section>
+
+    <script src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js">        
+    </script>
+
+  <script src = "https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+  <script src = "https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
+  <script src = "https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+  <script src = "js/firebase.js"></script>
+  <script src = "js/dashboard.js"></script>
+  <script src = "js/nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About: Code Upgraders</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+    <nav class="navbar">
+        <label for="menu-toggle" id="menu-header">Menu</label>
+        <input  type="checkbox" class="menu-toggle">
+        <ul class="page-links menu-items">
+          <li class="link-item">
+            <a class="link-anchor" href="/">Home</a>
+          </li>
+          <li class="link-item">
+            <a class="link-anchor" href="/about">About</a>
+          </li>
+          <li class="link-item">
+            <a class="link-anchor" href="/editor">Editor</a>
+          </li>
+          
+        </ul>
+      </nav>
+      <main>
+            <div>
+                <h1 class="aboutTxt">About</h1>
+                <h1 class="rand">About</h1>
+            </div>
+            <div class="notif">
+                <p>Thank you for visiting our website</p>
+            </div>
+            <p class="desc">This is a blog dedicated to all developers being in search of improvements</p>
+            <form class="contactform" onsubmit="submitForm(event)">
+                <h3>Contact us</h3>
+                <div>
+                  <label for="email">Email: </label>
+                  <input type="email" class="email" placeholder="yourmail@gmail.com"/>
+                  
+                </div>
+                <div>
+                  <label for="message">Message</label>
+                  <textarea  class="message" rows="10" placeholder="This is your message for us"></textarea>  
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+            <h2>Previous Messages Sent:</h2>
+            <div class="previous">
+                <% if(allMessages !== null) allMessages.forEach(mes=>{%>
+                  <p><%= mes %></p>
+                <% }); %>  
+            </div>
+      </main>
+      <script src="js/about.js"></script>
+</body>
+</html>
