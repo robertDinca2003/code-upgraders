@@ -121,4 +121,9 @@ const createBlog = (blog) => {
               <a href="/${blog.id}" class="btn blog-btn">Visit Article</a>
           </div>
     `;
+  document.querySelectorAll("img").forEach((img) => {
+    img.onerror = function () {
+      this.src = "../img/no-image-found.jpg";
+    };
+  });
 };

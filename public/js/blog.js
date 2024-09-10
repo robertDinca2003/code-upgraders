@@ -17,6 +17,9 @@ const setupBlog = (data) => {
   const publishedAt = document.querySelector(".published");
 
   banner.style.backgroundImage = `url("${data.bannerImage}")`;
+  banner.onerror = function () {
+    this.style.backgroundImage = "url(../img/no-image-found.jpg)";
+  };
   title.innerHTML += data.title;
   publishedAt.innerHTML += data.publishedAt;
   publishedAt.innerHTML += ` by ${data.author}`;
